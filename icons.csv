@@ -1,0 +1,4 @@
+symbol,path,notes
+edge,./icons/hivemq_edge_cloud_asset.png,"HiveMQ Edge"
+broker,./icons/hivemq_platform_asset.png,"HiveMQ Platform"
+cloud,./icons/hivemq_edge_cloud_asset.png,"HiveMQ Cloud"

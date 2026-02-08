@@ -1,11 +1,16 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from diagrams import Cluster, Diagram, Edge
-from diagrams.onprem.iot import Sensor
+from diagrams.generic.device import Tablet as Sensor
 from hivemq_theme import HiveMQPalette, GLOBAL_ATTR, BASE_NODE_ATTR
 
 # Initialize our palette from the CSV
+# Initialize our palette from the CSV
 palette = HiveMQPalette('icons.csv')
 
-with Diagram("Global Data Fabric", show=False, outformat="svg", graph_attr=GLOBAL_ATTR):
+with Diagram("Global Data Fabric", show=False, filename="images/global_data_fabric", outformat="svg", graph_attr=GLOBAL_ATTR):
 
     with Cluster("US-East (Baltimore Plant)", graph_attr={"bgcolor": "#222", "fontcolor": "white"}):
         # Using keys from our CSV

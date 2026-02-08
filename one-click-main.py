@@ -13,8 +13,12 @@ with Diagram(diag_name, show=False, outformat="svg", filename=diag_name):
 
 palette.generate_readme(diag_name, img_file)
 
-# Choice 1: Push to your HiveMQ GitHub repo
-# palette.push_to_github('.')
-
-# Choice 2: Upload to your S3 Documentation bucket
-# palette.upload_to_s3([img_file, 'README.md'], 'my-hivemq-docs-bucket')
+print("Diagram generation complete!")
+print(f"Generated: {img_file}")
+print(f"Generated README.md")
+print("")
+print("Note: Git and S3 upload functionality is commented out for security reasons.")
+print("To enable these features, you would need to:")
+print("1. Configure Git credentials")
+print("2. Configure AWS credentials")
+print("3. Uncomment the push_to_github() and upload_to_s3() lines")

@@ -8,8 +8,34 @@ from diagrams.custom import Custom
 from git import Repo
 
 # HiveMQ Branding
+# HiveMQ Branding
 HIVEMQ_YELLOW = "#FFC000"
 HIVEMQ_BLACK = "#000000"
+HIVEMQ_WHITE = "#FFFFFF"
+HIVEMQ_TEAL = "#037DA5"
+# Dark grey from brand guidelines (approx #181818 for backgrounds)
+DARK_GREY = "#181818"
+
+GLOBAL_ATTR = {
+    "bgcolor": HIVEMQ_BLACK,
+    "fontcolor": HIVEMQ_YELLOW,
+    "fontsize": "24",
+    "fontname": "Arial", # Fallback to a standard sans-serif
+    "pad": "1.0",
+    "nodesep": "1.0",
+    "ranksep": "1.0",
+    "splines": "ortho", # Geometric feel
+}
+
+BASE_NODE_ATTR = {
+    "fontcolor": HIVEMQ_BLACK,
+    "fillcolor": HIVEMQ_YELLOW,
+    "style": "filled",
+    "shape": "box", # Geometric shape
+    "penwidth": "0", # No border for cleaner look
+    "fontsize": "14",
+    "height": "1.0",
+}
 
 
 class HiveMQPalette:
@@ -52,6 +78,9 @@ class HiveMQPalette:
             else:
                 data = list(csv.DictReader(f))
             for entry in data:
+                # Resolve to absolute path to avoid issues with different output directories
+                if not os.path.isabs(entry["path"]):
+                    entry["path"] = os.path.abspath(entry["path"])
                 self.icon_data[entry["symbol"].lower()] = entry
 
     def get_node(self, symbol, label):
