@@ -20,44 +20,47 @@
 <path fill="#181818" stroke="#aeb6be" d="M20,-42C20,-42 517,-42 517,-42 523,-42 529,-48 529,-54 529,-54 529,-205 529,-205 529,-211 523,-217 517,-217 517,-217 20,-217 20,-217 14,-217 8,-211 8,-205 8,-205 8,-54 8,-54 8,-48 14,-42 20,-42"/>
 <text text-anchor="middle" x="66" y="-203.4" font-family="Sans-Serif" font-size="12.00" fill="white">US&#45;East (Primary)</text>
 </g>
-<!-- 94ef4c04a0064a258ccb7303dff1e944 -->
+<!-- 9d7cf5a6f1f84bfe867a599cb9c1714d -->
 <g id="node1" class="node">
-<title>94ef4c04a0064a258ccb7303dff1e944</title>
+<title>9d7cf5a6f1f84bfe867a599cb9c1714d</title>
 <polygon fill="#ffc000" stroke="black" stroke-width="0" points="117,-155 16,-155 16,-83 117,-83 117,-155"/>
 <image xlink:href="/home/bill/src/ai/ai-dac/.venv/lib/python3.13/site-packages/resources/generic/device/tablet.png" width="72px" height="72px" preserveAspectRatio="xMinYMin meet" x="30.5" y="-155"/>
 <text text-anchor="middle" x="66.5" y="-86.8" font-family="Sans-Serif" font-size="14.00" fill="#000000">Factory Assets</text>
 </g>
-<!-- 649f04dbc3f14d59bf0664d69c745068 -->
+<!-- 17ba95210c7d4353b8e5c0e3091b1ca7 -->
 <g id="node2" class="node">
-<title>649f04dbc3f14d59bf0664d69c745068</title>
+<title>17ba95210c7d4353b8e5c0e3091b1ca7</title>
+<image xlink:href="/home/bill/src/ai/ai-dac/icons/hivemq_edge_cloud_asset.png" width="101px" height="26.6264px" preserveAspectRatio="xMinYMin meet" x="190" y="-132.313"/>
 <text text-anchor="middle" x="240.5" y="-54.1" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">Baltimore Edge</text>
 </g>
-<!-- 94ef4c04a0064a258ccb7303dff1e944&#45;&gt;649f04dbc3f14d59bf0664d69c745068 -->
+<!-- 9d7cf5a6f1f84bfe867a599cb9c1714d&#45;&gt;17ba95210c7d4353b8e5c0e3091b1ca7 -->
 <g id="edge1" class="edge">
-<title>94ef4c04a0064a258ccb7303dff1e944&#45;&gt;649f04dbc3f14d59bf0664d69c745068</title>
+<title>9d7cf5a6f1f84bfe867a599cb9c1714d&#45;&gt;17ba95210c7d4353b8e5c0e3091b1ca7</title>
 <path fill="none" stroke="#7b8894" d="M117.3,-119C117.3,-119 179.94,-119 179.94,-119"/>
 <polygon fill="#7b8894" stroke="#7b8894" points="179.94,-122.5 189.94,-119 179.94,-115.5 179.94,-122.5"/>
 </g>
-<!-- dceb6a50716c4ae9ac075c472e85f7d0 -->
+<!-- 9f8fa3417f05429da1efc1a0b31730b1 -->
 <g id="node3" class="node">
-<title>dceb6a50716c4ae9ac075c472e85f7d0</title>
+<title>9f8fa3417f05429da1efc1a0b31730b1</title>
+<image xlink:href="/home/bill/src/ai/ai-dac/icons/hivemq_platform_asset.png" width="101px" height="56.8125px" preserveAspectRatio="xMinYMin meet" x="420" y="-147.406"/>
 <text text-anchor="middle" x="470.5" y="-54.1" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">US Broker Cluster</text>
 </g>
-<!-- 649f04dbc3f14d59bf0664d69c745068&#45;&gt;dceb6a50716c4ae9ac075c472e85f7d0 -->
+<!-- 17ba95210c7d4353b8e5c0e3091b1ca7&#45;&gt;9f8fa3417f05429da1efc1a0b31730b1 -->
 <g id="edge2" class="edge">
-<title>649f04dbc3f14d59bf0664d69c745068&#45;&gt;dceb6a50716c4ae9ac075c472e85f7d0</title>
+<title>17ba95210c7d4353b8e5c0e3091b1ca7&#45;&gt;9f8fa3417f05429da1efc1a0b31730b1</title>
 <path fill="none" stroke="#ffc000" d="M291.26,-119C291.26,-119 409.87,-119 409.87,-119"/>
 <polygon fill="#ffc000" stroke="#ffc000" points="409.87,-122.5 419.87,-119 409.87,-115.5 409.87,-122.5"/>
 <text text-anchor="middle" x="355.5" y="-125.6" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">spB / TLS</text>
 </g>
-<!-- 0bc1c2e5ee54417bbeef8f11a58ea95f -->
+<!-- 2650a7deb7184686a180c3b7b8d90909 -->
 <g id="node4" class="node">
-<title>0bc1c2e5ee54417bbeef8f11a58ea95f</title>
+<title>2650a7deb7184686a180c3b7b8d90909</title>
+<image xlink:href="/home/bill/src/ai/ai-dac/icons/hivemq_edge_cloud_asset.png" width="101px" height="26.6264px" preserveAspectRatio="xMinYMin meet" x="758" y="-132.313"/>
 <text text-anchor="middle" x="808.5" y="-54.1" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">EU DR Cluster</text>
 </g>
-<!-- dceb6a50716c4ae9ac075c472e85f7d0&#45;&gt;0bc1c2e5ee54417bbeef8f11a58ea95f -->
+<!-- 9f8fa3417f05429da1efc1a0b31730b1&#45;&gt;2650a7deb7184686a180c3b7b8d90909 -->
 <g id="edge3" class="edge">
-<title>dceb6a50716c4ae9ac075c472e85f7d0&#45;&gt;0bc1c2e5ee54417bbeef8f11a58ea95f</title>
+<title>9f8fa3417f05429da1efc1a0b31730b1&#45;&gt;2650a7deb7184686a180c3b7b8d90909</title>
 <path fill="none" stroke="#ffc000" stroke-dasharray="5,2" d="M521.1,-119C521.1,-119 747.83,-119 747.83,-119"/>
 <polygon fill="#ffc000" stroke="#ffc000" points="747.83,-122.5 757.83,-119 747.83,-115.5 747.83,-122.5"/>
 <text text-anchor="middle" x="625" y="-122.6" font-family="Sans-Serif" font-size="13.00" fill="#ffc000">Cloud&#45;to&#45;Cloud Bridge</text>

@@ -20,34 +20,34 @@
 <path fill="#000000" stroke="#aeb6be" d="M479,-42C479,-42 610,-42 610,-42 616,-42 622,-48 622,-54 622,-54 622,-205 622,-205 622,-211 616,-217 610,-217 610,-217 479,-217 479,-217 473,-217 467,-211 467,-205 467,-205 467,-54 467,-54 467,-48 473,-42 479,-42"/>
 <text text-anchor="middle" x="544.5" y="-203.4" font-family="Sans-Serif" font-size="12.00" fill="white">EU&#45;West (Frankfurt Hub)</text>
 </g>
-<!-- 02379395a5904bffbaf84620564a21a5 -->
+<!-- 2e62838ed20d4d018ea6395ddcbdb278 -->
 <g id="node1" class="node">
-<title>02379395a5904bffbaf84620564a21a5</title>
+<title>2e62838ed20d4d018ea6395ddcbdb278</title>
 <polygon fill="#ffc000" stroke="black" stroke-width="0" points="117,-155 16,-155 16,-83 117,-83 117,-155"/>
 <image xlink:href="/home/bill/src/ai/ai-dac/.venv/lib/python3.13/site-packages/resources/generic/device/tablet.png" width="72px" height="72px" preserveAspectRatio="xMinYMin meet" x="30.5" y="-155"/>
 <text text-anchor="middle" x="66.5" y="-86.8" font-family="Sans-Serif" font-size="14.00" fill="#000000">PLC / Sensors</text>
 </g>
-<!-- 904c1d15f50f48a1ab0e936de142a3ee -->
+<!-- 7350826c9f97472089274cb463157fe4 -->
 <g id="node2" class="node">
-<title>904c1d15f50f48a1ab0e936de142a3ee</title>
+<title>7350826c9f97472089274cb463157fe4</title>
 <image xlink:href="/home/bill/src/ai/ai-dac/icons/hivemq_edge_cloud_asset.png" width="101px" height="26.6264px" preserveAspectRatio="xMinYMin meet" x="190" y="-132.313"/>
 <text text-anchor="middle" x="240.5" y="-54.1" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">HiveMQ Edge</text>
 </g>
-<!-- 02379395a5904bffbaf84620564a21a5&#45;&gt;904c1d15f50f48a1ab0e936de142a3ee -->
+<!-- 2e62838ed20d4d018ea6395ddcbdb278&#45;&gt;7350826c9f97472089274cb463157fe4 -->
 <g id="edge1" class="edge">
-<title>02379395a5904bffbaf84620564a21a5&#45;&gt;904c1d15f50f48a1ab0e936de142a3ee</title>
+<title>2e62838ed20d4d018ea6395ddcbdb278&#45;&gt;7350826c9f97472089274cb463157fe4</title>
 <path fill="none" stroke="#7b8894" d="M117.3,-119C117.3,-119 179.94,-119 179.94,-119"/>
 <polygon fill="#7b8894" stroke="#7b8894" points="179.94,-122.5 189.94,-119 179.94,-115.5 179.94,-122.5"/>
 </g>
-<!-- 693ee105e4454f998626f5afcc9680f3 -->
+<!-- 4ff1d22b89ea47b8824c847ee22da41f -->
 <g id="node3" class="node">
-<title>693ee105e4454f998626f5afcc9680f3</title>
+<title>4ff1d22b89ea47b8824c847ee22da41f</title>
 <image xlink:href="/home/bill/src/ai/ai-dac/icons/hivemq_platform_asset.png" width="101px" height="56.8125px" preserveAspectRatio="xMinYMin meet" x="494" y="-147.406"/>
 <text text-anchor="middle" x="544.5" y="-54.1" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">Enterprise Broker</text>
 </g>
-<!-- 904c1d15f50f48a1ab0e936de142a3ee&#45;&gt;693ee105e4454f998626f5afcc9680f3 -->
+<!-- 7350826c9f97472089274cb463157fe4&#45;&gt;4ff1d22b89ea47b8824c847ee22da41f -->
 <g id="edge2" class="edge">
-<title>904c1d15f50f48a1ab0e936de142a3ee&#45;&gt;693ee105e4454f998626f5afcc9680f3</title>
+<title>7350826c9f97472089274cb463157fe4&#45;&gt;4ff1d22b89ea47b8824c847ee22da41f</title>
 <path fill="none" stroke="#ffc000" d="M291.04,-119C291.04,-119 483.84,-119 483.84,-119"/>
 <polygon fill="#ffc000" stroke="#ffc000" points="483.84,-122.5 493.84,-119 483.84,-115.5 483.84,-122.5"/>
 <text text-anchor="middle" x="383" y="-122.6" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">Bridge: spBv1.0/...</text>
