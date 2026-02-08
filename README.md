@@ -10,12 +10,6 @@ This repository contains diagram generation tools for creating HiveMQ architectu
 - **main.py**: Simple entry point that initializes the HiveMQ palette
 - **themed_main.py**: Example showing how to create a diagram with custom HiveMQ icons and styling
 - **one-click-main.py**: Template for creating diagrams with automated documentation generation
-- **diagram-hivemq-high-availability.py**: Example of a high availability architecture diagram
-- **diagrams-1.py through diagrams-3.py**: Various diagram examples
-- **diagrams-hybrid-bridge.py**: Hybrid bridge architecture diagram
-- **diagram-sparklplug.py**: Sparklplug integration diagram
-- **diagram-architecture-slide.py**: Architecture slide diagram
-- **diagram-svg-out.py**: SVG output diagram example
 
 ### Icon Management
 
@@ -23,29 +17,17 @@ This repository contains diagram generation tools for creating HiveMQ architectu
 - **icons/** directory: Storage for actual icon images
 - **icons.csv**: Alternative configuration format (auto-generated)
 
-## Cleanup Recommendations
+## Documentation
 
-1. **Remove Duplicate Files**: There are several versions of the theme files:
-   - hivemq_theme.py
-   - old_hivemq_theme.py
-   - old2_hivemq_theme.py
-   - old3_hivemq_theme.py
-   - hivemq_theme-2.py
-   - ehanced_hivemq_themed_main.py
+- **docs/ARCHITECTURE.md**: Detailed documentation of the project architecture and modules
+- **tests/**: Unit tests for the HiveMQPalette class
+- **example_runner.py**: Example demonstrating how to use the HiveMQPalette class
 
-2. **Consolidate Diagram Examples**: There's a lot of redundancy in diagram generation files. Consider:
-   - Keeping only one main example file
-   - Using a single generic diagram script with parameters
-   - Moving examples to a separate examples/ directory
+## Usage
 
-3. **Code Organization**:
-   - Create a clear folder structure (src/, examples/, utils/)
-   - Standardize naming conventions for diagram files
-   - Document all functions and classes with docstrings
-   - Move diagram examples to a dedicated examples/ directory
+The core functionality is accessed through the HiveMQPalette class:
 
-4. **Documentation**:
-   - Create a proper documentation system
-   - Add usage examples for the HiveMQPalette class
-   - Document all configuration options
-   - Include setup and installation instructions
+1. Initialize with `HiveMQPalette('icons.yaml')`
+2. Create diagram nodes with `palette.get_node('symbol', 'label')`
+3. Generate documentation with `palette.generate_readme('diagram_name', 'output.svg')`
+4. Use Git integration or S3 upload capabilities as needed
