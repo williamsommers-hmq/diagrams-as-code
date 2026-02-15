@@ -2,7 +2,7 @@
 
 Generate professional, HiveMQ-branded architecture diagrams programmatically using Python. Built for Technical Account Managers and engineers who need version-controlled, automatically generated IoT architecture documentation.
 
-![Architecture Diagram](./images/demo_architecture.png)
+![Architecture Diagram](./images/demo_architecture_transparent.png)
 
 ## Features
 
