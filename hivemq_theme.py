@@ -56,8 +56,8 @@ def get_theme(background="black"):
             "fontcolor": HIVEMQ_BLACK,
             "fillcolor": HIVEMQ_YELLOW,
         }
-        cluster_fontcolor = HIVEMQ_BLACK
-        cluster_bg = "#F0F0F0"
+        cluster_fontcolor = HIVEMQ_YELLOW
+        cluster_bg = "#2C2C2C"
     elif background == "white":
         global_attr = {
             **GLOBAL_ATTR,
@@ -69,12 +69,12 @@ def get_theme(background="black"):
             "fontcolor": HIVEMQ_BLACK,
             "fillcolor": HIVEMQ_YELLOW,
         }
-        cluster_fontcolor = HIVEMQ_BLACK
-        cluster_bg = "#F0F0F0"
+        cluster_fontcolor = HIVEMQ_YELLOW
+        cluster_bg = "#2C2C2C"
     else:
         global_attr = {**GLOBAL_ATTR}
         base_node_attr = {**BASE_NODE_ATTR}
-        cluster_fontcolor = HIVEMQ_WHITE
+        cluster_fontcolor = HIVEMQ_YELLOW
         cluster_bg = DARK_GREY
 
     return global_attr, base_node_attr, cluster_fontcolor, cluster_bg

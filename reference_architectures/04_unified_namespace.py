@@ -27,8 +27,8 @@ def main(background="black"):
     suffix = "_light" if background == "white" else "_transparent" if background == "transparent" else ""
     output = os.path.join(os.path.dirname(__file__), f"04_unified_namespace{suffix}")
 
-    broker_bg = "#0a3d5c" if background == "black" else "#d6eaf8"
-    cloud_bg = "#2a1a3d" if background == "black" else "#e8daef"
+    broker_bg = "#0a3d5c" if background == "black" else "#0d4f73"
+    cloud_bg = "#2a1a3d" if background == "black" else "#3a2555"
 
     with Diagram(
         "Unified Namespace (UNS) Reference Architecture",
