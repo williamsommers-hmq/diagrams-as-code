@@ -42,9 +42,23 @@ def get_theme(background="black"):
     """Return (global_attr, base_node_attr, cluster_fontcolor, cluster_bg) for a background color.
 
     Args:
-        background: "black" (dark mode, default) or "white" (light mode).
+        background: "black" (dark mode, default), "white" (light mode),
+                    or "transparent".
     """
-    if background == "white":
+    if background == "transparent":
+        global_attr = {
+            **GLOBAL_ATTR,
+            "bgcolor": "transparent",
+            "fontcolor": HIVEMQ_BLACK,
+        }
+        base_node_attr = {
+            **BASE_NODE_ATTR,
+            "fontcolor": HIVEMQ_BLACK,
+            "fillcolor": HIVEMQ_YELLOW,
+        }
+        cluster_fontcolor = HIVEMQ_BLACK
+        cluster_bg = "#F0F0F0"
+    elif background == "white":
         global_attr = {
             **GLOBAL_ATTR,
             "bgcolor": HIVEMQ_WHITE,

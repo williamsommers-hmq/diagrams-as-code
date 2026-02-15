@@ -47,7 +47,7 @@ Multi-site renewable energy grid: Wind farm, Solar farm, and Hydro plant each wi
 
 ## Background Options
 
-All diagrams support `--bg black` (default) or `--bg white`:
+All diagrams support `--bg black` (default), `--bg white`, or `--bg transparent`:
 
 ```bash
 # Dark background (default)
@@ -55,16 +55,20 @@ uv run python reference_architectures/01_iiot_data_streaming.py
 
 # White background
 uv run python reference_architectures/01_iiot_data_streaming.py --bg white
+
+# Transparent background (for embedding on any surface)
+uv run python reference_architectures/01_iiot_data_streaming.py --bg transparent
 ```
 
-Light-mode diagrams are saved with a `_light` suffix (e.g., `01_iiot_data_streaming_light.png`).
+Output files are suffixed by variant: `_light` for white, `_transparent` for transparent.
 
 ## Regenerating All
 
 ```bash
-# Both variants
+# All three variants
 for script in reference_architectures/0*.py; do
     uv run python "$script"
     uv run python "$script" --bg white
+    uv run python "$script" --bg transparent
 done
 ```

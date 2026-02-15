@@ -28,7 +28,7 @@ HMQ_ICONS = os.path.join(os.path.dirname(__file__), "..", "icons")
 
 def main(background="black"):
     global_attr, base_node_attr, cluster_fc, cluster_bg = get_theme(background)
-    suffix = "_light" if background == "white" else ""
+    suffix = "_light" if background == "white" else "_transparent" if background == "transparent" else ""
     output = os.path.join(os.path.dirname(__file__), f"01_iiot_data_streaming{suffix}")
 
     with Diagram(
@@ -81,6 +81,6 @@ def main(background="black"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bg", choices=["black", "white"], default="black")
+    parser.add_argument("--bg", choices=["black", "white", "transparent"], default="black")
     args = parser.parse_args()
     main(args.bg)
