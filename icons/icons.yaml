@@ -1,6 +1,702 @@
-- symbol: edge
-  path: ./icons/hmq-edge.png
-  notes: Used for Baltimore Plant
-- symbol: broker
-  path: ./icons/hmq-cluster.png
-  notes: Central AWS Cluster
+- symbol: 01
+  path: "./icons/PNGs/01.png"
+  notes: "01"
+- symbol: 02
+  path: "./icons/PNGs/02.png"
+  notes: "02"
+- symbol: 03
+  path: "./icons/PNGs/03.png"
+  notes: "03"
+- symbol: 04
+  path: "./icons/PNGs/04.png"
+  notes: "04"
+- symbol: 05
+  path: "./icons/PNGs/05.png"
+  notes: "05"
+- symbol: 06
+  path: "./icons/PNGs/06.png"
+  notes: "06"
+- symbol: 07
+  path: "./icons/PNGs/07.png"
+  notes: "07"
+- symbol: 08
+  path: "./icons/PNGs/08.png"
+  notes: "08"
+- symbol: 09
+  path: "./icons/PNGs/09.png"
+  notes: "09"
+- symbol: badge
+  path: "./icons/PNGs/Badge.png"
+  notes: "Badge"
+- symbol: badge_black
+  path: "./icons/PNGs/Badge_black.png"
+  notes: "Badge black"
+- symbol: bi_directional_black
+  path: "./icons/PNGs/Bi Directional black.png"
+  notes: "Bi Directional black"
+- symbol: bi_directional
+  path: "./icons/PNGs/Bi Directional.png"
+  notes: "Bi Directional"
+- symbol: bio_fuel
+  path: "./icons/PNGs/Bio-Fuel.png"
+  notes: "Bio Fuel"
+- symbol: blog_post_black
+  path: "./icons/PNGs/Blog Post black.png"
+  notes: "Blog Post black"
+- symbol: blog_post
+  path: "./icons/PNGs/Blog Post.png"
+  notes: "Blog Post"
+- symbol: book
+  path: "./icons/PNGs/Book.png"
+  notes: "Book"
+- symbol: broker_control_center_neg
+  path: "./icons/PNGs/Broker-Control-Center-neg.png"
+  notes: "Broker Control Center neg"
+- symbol: broker_control_center
+  path: "./icons/PNGs/Broker-Control-Center.png"
+  notes: "Broker Control Center"
+- symbol: bus_black_06
+  path: "./icons/PNGs/Bus black-06.png"
+  notes: "Bus black 06"
+- symbol: bus
+  path: "./icons/PNGs/Bus.png"
+  notes: "Bus"
+- symbol: cpu
+  path: "./icons/PNGs/CPU.png"
+  notes: "CPU"
+- symbol: car_1
+  path: "./icons/PNGs/Car (1).png"
+  notes: "Car (1)"
+- symbol: car_experts_neg
+  path: "./icons/PNGs/Car-Experts-Neg.png"
+  notes: "Car Experts Neg"
+- symbol: car_experts
+  path: "./icons/PNGs/Car-Experts.png"
+  notes: "Car Experts"
+- symbol: car_neg
+  path: "./icons/PNGs/Car-Neg.png"
+  notes: "Car Neg"
+- symbol: car
+  path: "./icons/PNGs/Car.png"
+  notes: "Car"
+- symbol: channel_1
+  path: "./icons/PNGs/Channel (1).png"
+  notes: "Channel (1)"
+- symbol: channel
+  path: "./icons/PNGs/Channel.png"
+  notes: "Channel"
+- symbol: chemical_plant_1
+  path: "./icons/PNGs/Chemical plant (1).png"
+  notes: "Chemical plant (1)"
+- symbol: chemical_plant
+  path: "./icons/PNGs/Chemical plant.png"
+  notes: "Chemical plant"
+- symbol: cloud_black
+  path: "./icons/PNGs/Cloud black.png"
+  notes: "Cloud black"
+- symbol: cloud
+  path: "./icons/PNGs/Cloud.png"
+  notes: "Cloud"
+- symbol: computer_chip
+  path: "./icons/PNGs/Computer-chip.png"
+  notes: "Computer chip"
+- symbol: connectivity_black
+  path: "./icons/PNGs/Connectivity black.png"
+  notes: "Connectivity black"
+- symbol: connectivity
+  path: "./icons/PNGs/Connectivity.png"
+  notes: "Connectivity"
+- symbol: consistent_communication
+  path: "./icons/PNGs/Consistent-Communication.png"
+  notes: "Consistent Communication"
+- symbol: container_black
+  path: "./icons/PNGs/Container black.png"
+  notes: "Container black"
+- symbol: container
+  path: "./icons/PNGs/Container.png"
+  notes: "Container"
+- symbol: cost_savings
+  path: "./icons/PNGs/Cost-savings.png"
+  notes: "Cost savings"
+- symbol: cpu_black
+  path: "./icons/PNGs/Cpu black .png"
+  notes: "Cpu black"
+- symbol: data_applications
+  path: "./icons/PNGs/Data Applications.png"
+  notes: "Data Applications"
+- symbol: data_center_black
+  path: "./icons/PNGs/Data center black.png"
+  notes: "Data center black"
+- symbol: data_center
+  path: "./icons/PNGs/Data center.png"
+  notes: "Data center"
+- symbol: data_cloud
+  path: "./icons/PNGs/Data-Cloud.png"
+  notes: "Data Cloud"
+- symbol: data_historian
+  path: "./icons/PNGs/Data-Historian.png"
+  notes: "Data Historian"
+- symbol: data_security
+  path: "./icons/PNGs/Data-Security.png"
+  notes: "Data Security"
+- symbol: data_lake
+  path: "./icons/PNGs/Data-lake.png"
+  notes: "Data lake"
+- symbol: data_real_time
+  path: "./icons/PNGs/Data-real-time.png"
+  notes: "Data real time"
+- symbol: deploy_black
+  path: "./icons/PNGs/Deploy black.png"
+  notes: "Deploy black"
+- symbol: deploy
+  path: "./icons/PNGs/Deploy.png"
+  notes: "Deploy"
+- symbol: dishwasher_black
+  path: "./icons/PNGs/Dishwasher black.png"
+  notes: "Dishwasher black"
+- symbol: dishwasher
+  path: "./icons/PNGs/Dishwasher.png"
+  notes: "Dishwasher"
+- symbol: double_gear
+  path: "./icons/PNGs/Double gear.png"
+  notes: "Double gear"
+- symbol: drone_medical
+  path: "./icons/PNGs/Drone-medical.png"
+  notes: "Drone medical"
+- symbol: drone
+  path: "./icons/PNGs/Drone.png"
+  notes: "Drone"
+- symbol: durability
+  path: "./icons/PNGs/Durability.png"
+  notes: "Durability"
+- symbol: durablity_black
+  path: "./icons/PNGs/Durablity black.png"
+  notes: "Durablity black"
+- symbol: edge_to_cloud
+  path: "./icons/PNGs/Edge-to-Cloud.png"
+  notes: "Edge to Cloud"
+- symbol: electricity_tower
+  path: "./icons/PNGs/Electricity-Tower.png"
+  notes: "Electricity Tower"
+- symbol: engagement
+  path: "./icons/PNGs/Engagement.png"
+  notes: "Engagement"
+- symbol: envelope_black
+  path: "./icons/PNGs/Envelope black.png"
+  notes: "Envelope black"
+- symbol: envelope
+  path: "./icons/PNGs/Envelope.png"
+  notes: "Envelope"
+- symbol: factory_black
+  path: "./icons/PNGs/Factory black.png"
+  notes: "Factory black"
+- symbol: factory
+  path: "./icons/PNGs/Factory.png"
+  notes: "Factory"
+- symbol: fast_forward_black
+  path: "./icons/PNGs/Fast forward black.png"
+  notes: "Fast forward black"
+- symbol: fast_forward
+  path: "./icons/PNGs/Fast forward.png"
+  notes: "Fast forward"
+- symbol: female_user
+  path: "./icons/PNGs/Female user.png"
+  notes: "Female user"
+- symbol: flexibility
+  path: "./icons/PNGs/Flexibility.png"
+  notes: "Flexibility"
+- symbol: flexible_neg
+  path: "./icons/PNGs/Flexible-Neg.png"
+  notes: "Flexible Neg"
+- symbol: flexible
+  path: "./icons/PNGs/Flexible.png"
+  notes: "Flexible"
+- symbol: flexibltiy_black
+  path: "./icons/PNGs/Flexibltiy black.png"
+  notes: "Flexibltiy black"
+- symbol: folder_black
+  path: "./icons/PNGs/Folder black.png"
+  notes: "Folder black"
+- symbol: folder
+  path: "./icons/PNGs/Folder.png"
+  notes: "Folder"
+- symbol: fully_managed
+  path: "./icons/PNGs/Fully-Managed.png"
+  notes: "Fully Managed"
+- symbol: fully_managed_neg
+  path: "./icons/PNGs/Fully-Managed_Neg.png"
+  notes: "Fully Managed Neg"
+- symbol: fully_manage
+  path: "./icons/PNGs/Fully-manage.png"
+  notes: "Fully manage"
+- symbol: gas_pump
+  path: "./icons/PNGs/Gas-Pump.png"
+  notes: "Gas Pump"
+- symbol: gateway_y
+  path: "./icons/PNGs/Gateway y.png"
+  notes: "Gateway y"
+- symbol: gateway
+  path: "./icons/PNGs/Gateway.png"
+  notes: "Gateway"
+- symbol: gear_complex_black
+  path: "./icons/PNGs/Gear complex black.png"
+  notes: "Gear complex black"
+- symbol: gear_complex
+  path: "./icons/PNGs/Gear complex.png"
+  notes: "Gear complex"
+- symbol: gear_simple_black
+  path: "./icons/PNGs/Gear simple black.png"
+  notes: "Gear simple black"
+- symbol: gear
+  path: "./icons/PNGs/Gear.png"
+  notes: "Gear"
+- symbol: globe_black
+  path: "./icons/PNGs/Globe black.png"
+  notes: "Globe black"
+- symbol: globe
+  path: "./icons/PNGs/Globe.png"
+  notes: "Globe"
+- symbol: guide
+  path: "./icons/PNGs/Guide.png"
+  notes: "Guide"
+- symbol: historian_blck
+  path: "./icons/PNGs/HIstorian blck.png"
+  notes: "HIstorian blck"
+- symbol: handshake_black
+  path: "./icons/PNGs/Handshake black.png"
+  notes: "Handshake black"
+- symbol: handshake
+  path: "./icons/PNGs/Handshake.png"
+  notes: "Handshake"
+- symbol: harddrive_black
+  path: "./icons/PNGs/Harddrive black.png"
+  notes: "Harddrive black"
+- symbol: harddrive
+  path: "./icons/PNGs/Harddrive.png"
+  notes: "Harddrive"
+- symbol: historian
+  path: "./icons/PNGs/Historian.png"
+  notes: "Historian"
+- symbol: hydro_turbine
+  path: "./icons/PNGs/Hydro-Turbine.png"
+  notes: "Hydro Turbine"
+- symbol: hydroelectric_energy
+  path: "./icons/PNGs/Hydroelectric-energy.png"
+  notes: "Hydroelectric energy"
+- symbol: hyrdo_energy
+  path: "./icons/PNGs/Hyrdo-Energy.png"
+  notes: "Hyrdo Energy"
+- symbol: integrations_neg
+  path: "./icons/PNGs/Integrations-neg.png"
+  notes: "Integrations neg"
+- symbol: integrations
+  path: "./icons/PNGs/Integrations.png"
+  notes: "Integrations"
+- symbol: key_black
+  path: "./icons/PNGs/Key black.png"
+  notes: "Key black"
+- symbol: key
+  path: "./icons/PNGs/Key.png"
+  notes: "Key"
+- symbol: laptop_black
+  path: "./icons/PNGs/Laptop black.png"
+  notes: "Laptop black"
+- symbol: laptop
+  path: "./icons/PNGs/Laptop.png"
+  notes: "Laptop"
+- symbol: lightbulb_neg
+  path: "./icons/PNGs/Lightbulb-Neg.png"
+  notes: "Lightbulb Neg"
+- symbol: lightbulb
+  path: "./icons/PNGs/Lightbulb.png"
+  notes: "Lightbulb"
+- symbol: load_balancer_black
+  path: "./icons/PNGs/Load balancer black.png"
+  notes: "Load balancer black"
+- symbol: load_balancer
+  path: "./icons/PNGs/Load balancer.png"
+  notes: "Load balancer"
+- symbol: location
+  path: "./icons/PNGs/Location.png"
+  notes: "Location"
+- symbol: lock_closed_black
+  path: "./icons/PNGs/Lock closed black.png"
+  notes: "Lock closed black"
+- symbol: lock_open_black
+  path: "./icons/PNGs/Lock open black.png"
+  notes: "Lock open black"
+- symbol: lock
+  path: "./icons/PNGs/Lock.png"
+  notes: "Lock"
+- symbol: log_black
+  path: "./icons/PNGs/Log black.png"
+  notes: "Log black"
+- symbol: log
+  path: "./icons/PNGs/Log.png"
+  notes: "Log"
+- symbol: mqtt_client_library_neg
+  path: "./icons/PNGs/MQTT-client-library-neg.png"
+  notes: "MQTT client library neg"
+- symbol: mqtt_client_library
+  path: "./icons/PNGs/MQTT-client-library.png"
+  notes: "MQTT client library"
+- symbol: marketing
+  path: "./icons/PNGs/Marketing.png"
+  notes: "Marketing"
+- symbol: master_scada_system
+  path: "./icons/PNGs/Master-SCADA-System.png"
+  notes: "Master SCADA System"
+- symbol: modbus_black
+  path: "./icons/PNGs/Modbus black.png"
+  notes: "Modbus black"
+- symbol: modbus
+  path: "./icons/PNGs/Modbus.png"
+  notes: "Modbus"
+- symbol: monitor_browser_black
+  path: "./icons/PNGs/Monitor browser black.png"
+  notes: "Monitor browser black"
+- symbol: monitor_browser
+  path: "./icons/PNGs/Monitor browser.png"
+  notes: "Monitor browser"
+- symbol: monitor_stats_black
+  path: "./icons/PNGs/Monitor stats black.png"
+  notes: "Monitor stats black"
+- symbol: monitor_stats
+  path: "./icons/PNGs/Monitor stats.png"
+  notes: "Monitor stats"
+- symbol: multi_deployments
+  path: "./icons/PNGs/Multi-deployments.png"
+  notes: "Multi deployments"
+- symbol: number_of_plants
+  path: "./icons/PNGs/Number-of-Plants.png"
+  notes: "Number of Plants"
+- symbol: observable_insights_1
+  path: "./icons/PNGs/Observable-Insights(1).png"
+  notes: "Observable Insights(1)"
+- symbol: observable_insights_neg
+  path: "./icons/PNGs/Observable-Insights-Neg.png"
+  notes: "Observable Insights Neg"
+- symbol: observable_insights
+  path: "./icons/PNGs/Observable-insights.png"
+  notes: "Observable insights"
+- symbol: oil_drilling
+  path: "./icons/PNGs/Oil Drilling.png"
+  notes: "Oil Drilling"
+- symbol: oil_engineering
+  path: "./icons/PNGs/Oil Engineering.png"
+  notes: "Oil Engineering"
+- symbol: oil_pipeline
+  path: "./icons/PNGs/Oil Pipeline.png"
+  notes: "Oil Pipeline"
+- symbol: oil_refinery
+  path: "./icons/PNGs/Oil Refinery.png"
+  notes: "Oil Refinery"
+- symbol: oil_transportation
+  path: "./icons/PNGs/Oil Transportation.png"
+  notes: "Oil Transportation"
+- symbol: oil_well
+  path: "./icons/PNGs/Oil Well.png"
+  notes: "Oil Well"
+- symbol: open_lock
+  path: "./icons/PNGs/Open lock.png"
+  notes: "Open lock"
+- symbol: plc
+  path: "./icons/PNGs/PLC.png"
+  notes: "PLC"
+- symbol: passanger_black
+  path: "./icons/PNGs/Passanger black.png"
+  notes: "Passanger black"
+- symbol: passanger
+  path: "./icons/PNGs/Passanger.png"
+  notes: "Passanger"
+- symbol: phone_black
+  path: "./icons/PNGs/Phone black.png"
+  notes: "Phone black"
+- symbol: phone
+  path: "./icons/PNGs/Phone.png"
+  notes: "Phone"
+- symbol: platform_black
+  path: "./icons/PNGs/Platform black.png"
+  notes: "Platform black"
+- symbol: platform
+  path: "./icons/PNGs/Platform.png"
+  notes: "Platform"
+- symbol: plug_black
+  path: "./icons/PNGs/Plug black.png"
+  notes: "Plug black"
+- symbol: plug
+  path: "./icons/PNGs/Plug.png"
+  notes: "Plug"
+- symbol: plugin_black
+  path: "./icons/PNGs/Plugin black.png"
+  notes: "Plugin black"
+- symbol: plugin
+  path: "./icons/PNGs/Plugin.png"
+  notes: "Plugin"
+- symbol: price
+  path: "./icons/PNGs/Price.png"
+  notes: "Price"
+- symbol: pulse_agent
+  path: "./icons/PNGs/Pulse-Agent.png"
+  notes: "Pulse Agent"
+- symbol: pulse_client
+  path: "./icons/PNGs/Pulse-Client.png"
+  notes: "Pulse Client"
+- symbol: pulse_server
+  path: "./icons/PNGs/Pulse-Server.png"
+  notes: "Pulse Server"
+- symbol: question
+  path: "./icons/PNGs/Question.png"
+  notes: "Question"
+- symbol: radio_black
+  path: "./icons/PNGs/Radio black.png"
+  notes: "Radio black"
+- symbol: radio
+  path: "./icons/PNGs/Radio.png"
+  notes: "Radio"
+- symbol: recycle
+  path: "./icons/PNGs/Recycle.png"
+  notes: "Recycle"
+- symbol: regulatory_compliance
+  path: "./icons/PNGs/Regulatory Compliance.png"
+  notes: "Regulatory Compliance"
+- symbol: reliability_neg
+  path: "./icons/PNGs/Reliability-Neg.png"
+  notes: "Reliability Neg"
+- symbol: reliable_1
+  path: "./icons/PNGs/Reliable (1).png"
+  notes: "Reliable (1)"
+- symbol: reliable_black
+  path: "./icons/PNGs/Reliable black.png"
+  notes: "Reliable black"
+- symbol: reliable
+  path: "./icons/PNGs/Reliable.png"
+  notes: "Reliable"
+- symbol: renewable_energy
+  path: "./icons/PNGs/Renewable-Energy.png"
+  notes: "Renewable Energy"
+- symbol: retained_mag_black
+  path: "./icons/PNGs/Retained mag black.png"
+  notes: "Retained mag black"
+- symbol: retained_mag
+  path: "./icons/PNGs/Retained mag.png"
+  notes: "Retained mag"
+- symbol: robot_neg
+  path: "./icons/PNGs/Robot-neg.png"
+  notes: "Robot neg"
+- symbol: robot
+  path: "./icons/PNGs/Robot.png"
+  notes: "Robot"
+- symbol: rocket_neg
+  path: "./icons/PNGs/Rocket-Neg.png"
+  notes: "Rocket Neg"
+- symbol: rocket
+  path: "./icons/PNGs/Rocket.png"
+  notes: "Rocket"
+- symbol: sales_bootcamp
+  path: "./icons/PNGs/Sales-Bootcamp.png"
+  notes: "Sales Bootcamp"
+- symbol: scalable_black
+  path: "./icons/PNGs/Scalable black.png"
+  notes: "Scalable black"
+- symbol: scalable
+  path: "./icons/PNGs/Scalable.png"
+  notes: "Scalable"
+- symbol: scalable_neg
+  path: "./icons/PNGs/Scalable_Neg.png"
+  notes: "Scalable Neg"
+- symbol: scale_legal
+  path: "./icons/PNGs/Scale-Legal.png"
+  notes: "Scale Legal"
+- symbol: seamless_interation
+  path: "./icons/PNGs/Seamless-Interation.png"
+  notes: "Seamless Interation"
+- symbol: search_black
+  path: "./icons/PNGs/Search black.png"
+  notes: "Search black"
+- symbol: search
+  path: "./icons/PNGs/Search.png"
+  notes: "Search"
+- symbol: security_lock_neg
+  path: "./icons/PNGs/Security-Lock-Neg.png"
+  notes: "Security Lock Neg"
+- symbol: security_lock
+  path: "./icons/PNGs/Security-Lock.png"
+  notes: "Security Lock"
+- symbol: security_neg
+  path: "./icons/PNGs/Security-Neg.png"
+  notes: "Security Neg"
+- symbol: security_control_integration
+  path: "./icons/PNGs/Security-control-integration.png"
+  notes: "Security control integration"
+- symbol: security
+  path: "./icons/PNGs/Security.png"
+  notes: "Security"
+- symbol: seemless_integration_neg
+  path: "./icons/PNGs/Seemless-Integration-Neg.png"
+  notes: "Seemless Integration Neg"
+- symbol: self_managed_neg
+  path: "./icons/PNGs/Self-Managed-Neg.png"
+  notes: "Self Managed Neg"
+- symbol: self_managed
+  path: "./icons/PNGs/Self-Managed.png"
+  notes: "Self Managed"
+- symbol: sensor_black
+  path: "./icons/PNGs/Sensor black.png"
+  notes: "Sensor black"
+- symbol: sensor
+  path: "./icons/PNGs/Sensor.png"
+  notes: "Sensor"
+- symbol: server_black
+  path: "./icons/PNGs/Server black.png"
+  notes: "Server black"
+- symbol: server
+  path: "./icons/PNGs/Server.png"
+  notes: "Server"
+- symbol: serverless_black
+  path: "./icons/PNGs/Serverless black.png"
+  notes: "Serverless black"
+- symbol: serverless
+  path: "./icons/PNGs/Serverless.png"
+  notes: "Serverless"
+- symbol: simple_to_deploy_1
+  path: "./icons/PNGs/Simple-to-deploy(1).png"
+  notes: "Simple to deploy(1)"
+- symbol: simple_to_deploy_neg
+  path: "./icons/PNGs/Simple-to-deploy-neg.png"
+  notes: "Simple to deploy neg"
+- symbol: solar_panel
+  path: "./icons/PNGs/Solar-panel.png"
+  notes: "Solar panel"
+- symbol: solar
+  path: "./icons/PNGs/Solar.png"
+  notes: "Solar"
+- symbol: solution
+  path: "./icons/PNGs/Solution.png"
+  notes: "Solution"
+- symbol: speech_buble_black
+  path: "./icons/PNGs/Speech buble black.png"
+  notes: "Speech buble black"
+- symbol: speech
+  path: "./icons/PNGs/Speech.png"
+  notes: "Speech"
+- symbol: stop_watch_black
+  path: "./icons/PNGs/Stop watch black.png"
+  notes: "Stop watch black"
+- symbol: stopwatch
+  path: "./icons/PNGs/Stopwatch.png"
+  notes: "Stopwatch"
+- symbol: sustainability
+  path: "./icons/PNGs/Sustainability.png"
+  notes: "Sustainability"
+- symbol: tablet_black
+  path: "./icons/PNGs/Tablet black.png"
+  notes: "Tablet black"
+- symbol: tablet
+  path: "./icons/PNGs/Tablet.png"
+  notes: "Tablet"
+- symbol: tacho_black
+  path: "./icons/PNGs/Tacho black.png"
+  notes: "Tacho black"
+- symbol: tacho
+  path: "./icons/PNGs/Tacho.png"
+  notes: "Tacho"
+- symbol: target
+  path: "./icons/PNGs/Target.png"
+  notes: "Target"
+- symbol: thermal_plant
+  path: "./icons/PNGs/Thermal-Plant.png"
+  notes: "Thermal Plant"
+- symbol: topic
+  path: "./icons/PNGs/Topic.png"
+  notes: "Topic"
+- symbol: troubleshooting
+  path: "./icons/PNGs/Troubleshooting.png"
+  notes: "Troubleshooting"
+- symbol: turbine_wind_energy
+  path: "./icons/PNGs/Turbine wind energy.png"
+  notes: "Turbine wind energy"
+- symbol: turbine_multi
+  path: "./icons/PNGs/Turbine-Multi.png"
+  notes: "Turbine Multi"
+- symbol: two_gears_black
+  path: "./icons/PNGs/Two gears black.png"
+  notes: "Two gears black"
+- symbol: unrel_network
+  path: "./icons/PNGs/Unrel network.png"
+  notes: "Unrel network"
+- symbol: unreliable_network_black
+  path: "./icons/PNGs/Unreliable network black.png"
+  notes: "Unreliable network black"
+- symbol: user
+  path: "./icons/PNGs/User.png"
+  notes: "User"
+- symbol: vent_black
+  path: "./icons/PNGs/Vent black.png"
+  notes: "Vent black"
+- symbol: vent
+  path: "./icons/PNGs/Vent.png"
+  notes: "Vent"
+- symbol: video_black
+  path: "./icons/PNGs/Video black.png"
+  notes: "Video black"
+- symbol: video
+  path: "./icons/PNGs/Video.png"
+  notes: "Video"
+- symbol: webinar_black
+  path: "./icons/PNGs/Webinar black.png"
+  notes: "Webinar black"
+- symbol: webinar
+  path: "./icons/PNGs/Webinar.png"
+  notes: "Webinar"
+- symbol: wifi_black
+  path: "./icons/PNGs/Wifi black.png"
+  notes: "Wifi black"
+- symbol: wifi
+  path: "./icons/PNGs/Wifi.png"
+  notes: "Wifi"
+- symbol: wind_turbine
+  path: "./icons/PNGs/Wind-Turbine.png"
+  notes: "Wind Turbine"
+- symbol: windmill
+  path: "./icons/PNGs/Windmill.png"
+  notes: "Windmill"
+- symbol: zero_downtime
+  path: "./icons/PNGs/Zero Downtime.png"
+  notes: "Zero Downtime"
+- symbol: authorzation_1
+  path: "./icons/PNGs/authorzation (1).png"
+  notes: "authorzation (1)"
+- symbol: authorzation
+  path: "./icons/PNGs/authorzation.png"
+  notes: "authorzation"
+- symbol: book_black
+  path: "./icons/PNGs/book black.png"
+  notes: "book black"
+- symbol: connection_per_vehicle
+  path: "./icons/PNGs/connection-per-vehicle.png"
+  notes: "connection per vehicle"
+- symbol: control_data
+  path: "./icons/PNGs/control-data.png"
+  notes: "control data"
+- symbol: cost_material_down
+  path: "./icons/PNGs/cost-material-down.png"
+  notes: "cost material down"
+- symbol: digital_twin
+  path: "./icons/PNGs/digital-twin.png"
+  notes: "digital twin"
+- symbol: drone_oil_and_gas
+  path: "./icons/PNGs/drone-oil-and-gas.png"
+  notes: "drone oil and gas"
+- symbol: number_of_vehicle
+  path: "./icons/PNGs/number-of-vehicle.png"
+  notes: "number of vehicle"
+- symbol: operational_efficiency
+  path: "./icons/PNGs/operational-efficiency.png"
+  notes: "operational efficiency"
+- symbol: overall_equipment_efficiency
+  path: "./icons/PNGs/overall-equipment-efficiency.png"
+  notes: "overall equipment efficiency"
+- symbol: product_service_quality
+  path: "./icons/PNGs/product-service-quality.png"
+  notes: "product service quality"
