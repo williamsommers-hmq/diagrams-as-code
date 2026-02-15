@@ -8,7 +8,6 @@ from diagrams.custom import Custom
 from git import Repo
 
 # HiveMQ Branding
-# HiveMQ Branding
 HIVEMQ_YELLOW = "#FFC000"
 HIVEMQ_BLACK = "#000000"
 HIVEMQ_WHITE = "#FFFFFF"
@@ -16,26 +15,55 @@ HIVEMQ_TEAL = "#037DA5"
 # Dark grey from brand guidelines (approx #181818 for backgrounds)
 DARK_GREY = "#181818"
 
+# Default theme (dark background)
 GLOBAL_ATTR = {
     "bgcolor": HIVEMQ_BLACK,
     "fontcolor": HIVEMQ_YELLOW,
     "fontsize": "24",
-    "fontname": "Arial", # Fallback to a standard sans-serif
+    "fontname": "Arial",
     "pad": "1.0",
     "nodesep": "1.0",
     "ranksep": "1.0",
-    "splines": "ortho", # Geometric feel
+    "splines": "ortho",
 }
 
 BASE_NODE_ATTR = {
     "fontcolor": HIVEMQ_BLACK,
     "fillcolor": HIVEMQ_YELLOW,
     "style": "filled",
-    "shape": "box", # Geometric shape
-    "penwidth": "0", # No border for cleaner look
+    "shape": "box",
+    "penwidth": "0",
     "fontsize": "14",
     "height": "1.0",
 }
+
+
+def get_theme(background="black"):
+    """Return (global_attr, base_node_attr, cluster_fontcolor, cluster_bg) for a background color.
+
+    Args:
+        background: "black" (dark mode, default) or "white" (light mode).
+    """
+    if background == "white":
+        global_attr = {
+            **GLOBAL_ATTR,
+            "bgcolor": HIVEMQ_WHITE,
+            "fontcolor": HIVEMQ_BLACK,
+        }
+        base_node_attr = {
+            **BASE_NODE_ATTR,
+            "fontcolor": HIVEMQ_BLACK,
+            "fillcolor": HIVEMQ_YELLOW,
+        }
+        cluster_fontcolor = HIVEMQ_BLACK
+        cluster_bg = "#F0F0F0"
+    else:
+        global_attr = {**GLOBAL_ATTR}
+        base_node_attr = {**BASE_NODE_ATTR}
+        cluster_fontcolor = HIVEMQ_WHITE
+        cluster_bg = DARK_GREY
+
+    return global_attr, base_node_attr, cluster_fontcolor, cluster_bg
 
 
 class HiveMQPalette:

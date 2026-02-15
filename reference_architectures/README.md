@@ -45,12 +45,26 @@ Hub-and-spoke UNS with HiveMQ as the central broker. ISA-95 domains (Control, Op
 
 Multi-site renewable energy grid: Wind farm, Solar farm, and Hydro plant each with HiveMQ Edge → central cloud broker → grid analytics, demand forecasting, and regulatory compliance. Composite architecture applying patterns from all four source articles.
 
-## Regenerating
+## Background Options
+
+All diagrams support `--bg black` (default) or `--bg white`:
 
 ```bash
+# Dark background (default)
 uv run python reference_architectures/01_iiot_data_streaming.py
-uv run python reference_architectures/02_edge_to_cloud.py
-uv run python reference_architectures/03_smart_manufacturing.py
-uv run python reference_architectures/04_unified_namespace.py
-uv run python reference_architectures/05_multi_site_energy.py
+
+# White background
+uv run python reference_architectures/01_iiot_data_streaming.py --bg white
+```
+
+Light-mode diagrams are saved with a `_light` suffix (e.g., `01_iiot_data_streaming_light.png`).
+
+## Regenerating All
+
+```bash
+# Both variants
+for script in reference_architectures/0*.py; do
+    uv run python "$script"
+    uv run python "$script" --bg white
+done
 ```
