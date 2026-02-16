@@ -11,6 +11,7 @@
 | # | Date | Commits | Summary |
 |---|------|---------|---------|
 | 1 | 2026-02-14 | `3c0bd70`..`9591f0f` | Clone repo, add icon library, clean up structure, create reference architectures with theme support |
+| 2 | 2026-02-15 | `4dd8fc0`..`d138026` | Semantic gap diagram, project audit, fix critical & medium issues, timekeeping |
 
 ---
 
@@ -172,9 +173,9 @@ A `get_theme(background)` function was added to `hivemq_theme.py` to support `--
 ### Pending / Deferred
 
 - [ ] Set up GitHub Actions workflow for automated diagram generation on push (referenced in RUNNING.md but not configured)
-- [ ] Implement `print_bom()` method referenced in `tests/test_bom.py` but missing from `hivemq_theme.py`
+- [x] Implement `print_bom()` method referenced in `tests/test_bom.py` but missing from `hivemq_theme.py` [Completed in Session 2]
 - [ ] Create PR from fork back to upstream `bsommers/diagrams-as-code`
-- [ ] Align Dockerfile Python version (3.11) with project requirement (3.13)
+- [x] Align Dockerfile Python version (3.11) with project requirement (3.13) [Completed in Session 2]
 - [ ] Add the numbered icons (01-09.png) to have meaningful symbol names instead of just numbers
 
 ### Session Statistics
@@ -189,3 +190,133 @@ A `get_theme(background)` function was added to `hivemq_theme.py` to support `--
 | Net lines added | +5,917 |
 | Reference architectures | 5 scripts, 15 PNGs |
 | Icon library | 234 PNGs, ~170 SVGs |
+
+---
+
+## Session 2: 2026-02-15
+
+### Context
+- **Starting state:** Session 1 ended with 10 commits, 5 reference architectures, theme support, and comprehensive docs. The `docs/CHAT_HISTORY.md` from Session 1 was committed but several known issues remained: `print_bom()` unimplemented, Dockerfile broken, README overwritten by test output, root-level SVG artifacts, and incomplete `.gitignore`.
+- **Goal:** Create a new semantic gap diagram, audit the project for improvements, and fix all identified issues.
+- **Ending state:** 6th reference architecture added (semantic gap), timekeeping report created, all critical and medium issues resolved. Project is in a clean, consistent state.
+- **Commits:** `4dd8fc0`..`d138026` (4 commits)
+
+### Narrative
+
+This session was a continuation from Session 1, resuming after the context window was compacted. The first task was to commit and push the `docs/CHAT_HISTORY.md` that had been written but not yet pushed at the end of Session 1.
+
+The user then requested a new diagram: a three-layer architecture showing "the semantic gap" — the missing ontology/semantic layer between data collection (Layer 1) and AI inference (Layer 3). The initial render used a TB (top-to-bottom) layout on a dark background. The user requested a white background with a more rectangular 4:3 aspect ratio. The layout was switched to LR (left-to-right) with `size="16,12!"` and `ratio="0.75"`. An intermediate iteration added `node_attr` with yellow fill which incorrectly covered the Custom icon images — this was quickly reverted. The user then requested transparent/white cluster backgrounds instead of dark, which required conditional color logic: dark cluster backgrounds for black mode, transparent for white mode, with appropriately colored labels and borders.
+
+After the diagram was committed, the user asked "what can be done to improve this project?" A comprehensive codebase exploration was performed via a subagent, auditing all files, tests, Docker config, CI/CD, documentation, and icons. The audit identified issues in three tiers: critical (3), medium (5), and minor/long-term (several).
+
+The user then asked to "fix the critical issues" — all three were resolved in a single commit: (1) `README.md` restored from git after being overwritten by `generate_readme()` during a Baltimore test run, (2) `print_bom()` method implemented on `HiveMQPalette` to print the BOM table to console, and (3) `Dockerfile` fixed — Python 3.11→3.13 and `CMD main.py`→`demo.py`.
+
+The user then asked to "fix the medium issues too" — five fixes in a single commit: (1) deleted root-level SVG artifacts from test runs, (2) deleted stale bootstrap `icons.yaml` at root, (3) expanded `.gitignore` with `.pytest_cache/`, `dist/`, `build/`, `htmlcov/`, `*.bak`, (4) fixed `run_demo.sh` to check `images/` for output instead of repo root, and (5) added diagram #6 to `reference_architectures/README.md`.
+
+### Exchange Log
+
+#### Exchange 1: Commit Chat History
+**User:** (continuation from Session 1)
+**Action:** Committed and pushed `docs/CHAT_HISTORY.md`
+**Result:** Commit `4dd8fc0`
+**Files:** `docs/CHAT_HISTORY.md` (created)
+
+#### Exchange 2: Semantic Gap Diagram
+**User:** "generate a PNG: three-layer architecture diagram showing the gap..."
+**Action:** Created `06_semantic_gap.py` with 3-layer layout (Data Collection → Missing Semantic Layer → AI Inference). Used Question.png icons for the gap, dashed red cluster border, labeled edges ("Raw values", "No context → just numbers", "No semantics → garbage in, garbage out").
+**Result:** Rendered `06_semantic_gap.png` (dark) successfully
+
+#### Exchange 3: White Background + 4:3 Aspect
+**User:** "white background. more rectangular 4:3 aspect ratio"
+**Action:** Switched direction TB→LR, added `size="16,12!"` and `ratio="0.75"`, iterated through node_attr issue (yellow fill covering icons — reverted), then changed cluster backgrounds to transparent for white mode with gray borders.
+**Result:** Rendered `06_semantic_gap_light.png`
+
+#### Exchange 4: Commit & Push Diagram
+**User:** "git commit and push to remote"
+**Action:** Committed both dark and light variants plus script
+**Result:** Commit `6cd67b9`
+**Files:** `reference_architectures/06_semantic_gap.py` (created), `06_semantic_gap.png` (created), `06_semantic_gap_light.png` (created)
+
+#### Exchange 5: Timekeeping Report
+**User:** "/timekeeping"
+**Action:** Reconstructed timeline across all sessions from git commit timestamps, estimated wallclock vs working time and token usage per activity
+**Result:** Commit `db7ea00`
+**Files:** `docs/TIMEKEEPING.md` (created)
+
+#### Exchange 6: Project Improvement Audit
+**User:** "what can be done to improve this project?"
+**Action:** Launched comprehensive codebase exploration via subagent — audited all files, tests, Docker, CI/CD, docs, icons. Categorized findings into critical (3), medium (5), and longer-term improvements.
+**Result:** Presented prioritized improvement list to user
+
+#### Exchange 7: Fix Critical Issues
+**User:** "fix the critical issues you found"
+**Action:** (1) Restored README.md from git, (2) implemented `print_bom()` on HiveMQPalette, (3) fixed Dockerfile Python version and CMD
+**Result:** Commit `ee748f4`
+**Files:** `README.md` (restored), `hivemq_theme.py` (modified), `Dockerfile` (modified)
+
+#### Exchange 8: Fix Medium Issues
+**User:** "fix the medium issues too"
+**Action:** (1) Deleted root SVG artifacts, (2) deleted stale `icons.yaml`, (3) expanded `.gitignore`, (4) fixed `run_demo.sh` output path, (5) added #6 to reference architectures README
+**Result:** Commit `d138026`
+**Files:** `.gitignore` (modified), `run_demo.sh` (modified), `reference_architectures/README.md` (modified); `baltimore_industrial_uns.svg`, `Baltimore_Plant_UNS.svg`, `icons.yaml` (deleted)
+
+### Decisions Made
+
+| Decision | Options Considered | Chosen | Rationale |
+|----------|-------------------|--------|-----------|
+| Semantic gap layout | TB (vertical) vs LR (horizontal) | LR | User wanted 4:3 aspect ratio — horizontal layout fills width better |
+| White-mode cluster backgrounds | Dark (#2C2C2C) vs transparent | Transparent with gray borders | User: "background colors of each container box should be clear / no color / or white" |
+| `print_bom()` implementation | Console table vs JSON output vs return dict | Console table (matching `generate_readme` BOM format) | Matches the pattern in `test_bom.py` which calls `print_bom()` expecting console output |
+| Root SVG cleanup | Move to images/ vs delete | Delete | Untracked test artifacts with no ongoing value |
+
+### Errors & Resolutions
+
+| Error | Root Cause | Resolution |
+|-------|-----------|------------|
+| Yellow fill covering Custom node icons | Added `node_attr` with `fillcolor: HIVEMQ_YELLOW` which painted over icon images | Reverted `node_attr` — Custom nodes handle their own rendering |
+| `generate_readme()` overwrites README.md | Method writes BOM output to `README.md` in working directory — test run clobbered project README | Restored from git; this is a design issue in `generate_readme()` that writes to a fixed filename |
+
+### Files Inventory
+
+#### Created This Session
+- `reference_architectures/06_semantic_gap.py` — Three-layer semantic gap diagram script
+- `reference_architectures/06_semantic_gap.png` — Dark variant
+- `reference_architectures/06_semantic_gap_light.png` — White/transparent variant
+- `docs/TIMEKEEPING.md` — Session timekeeping report with wallclock/working time analysis
+
+#### Modified This Session
+- `hivemq_theme.py` — Added `print_bom()` method to HiveMQPalette class
+- `Dockerfile` — Python 3.11→3.13, CMD `main.py`→`demo.py`
+- `.gitignore` — Added `.pytest_cache/`, `dist/`, `build/`, `htmlcov/`, `*.bak`
+- `run_demo.sh` — Fixed output path check from root to `images/`
+- `reference_architectures/README.md` — Added diagram #6, updated count to six
+- `README.md` — Restored from git (was overwritten by test run)
+- `docs/CHAT_HISTORY.md` — Added Session 2 entries
+
+#### Deleted This Session
+- `baltimore_industrial_uns.svg` — Root-level test artifact
+- `Baltimore_Plant_UNS.svg` — Root-level test artifact
+- `icons.yaml` — Stale bootstrap default (1 entry) conflicting with `icons/icons.yaml` (234 entries)
+
+### Pending / Deferred
+
+- [ ] Set up GitHub Actions workflow for automated diagram generation on push
+- [ ] Create PR from fork back to upstream `bsommers/diagrams-as-code`
+- [ ] Add meaningful symbol names for numbered icons (01-09.png)
+- [ ] Write comprehensive unit tests (current tests are mostly stubs)
+- [ ] Add type hints to `hivemq_theme.py`
+- [ ] Create searchable icon catalog/browser for TAMs
+- [ ] Add diagram validation (check referenced icon paths exist before rendering)
+- [ ] Pin dependency versions in `requirements.txt`
+- [ ] Fix `generate_readme()` to accept output path instead of always writing to `README.md`
+
+### Session Statistics
+
+| Metric | Value |
+|--------|-------|
+| Commits | 4 |
+| Files created | 4 |
+| Files modified | 6 |
+| Files deleted | 3 |
+| Net lines added | +257 |
+| Reference architectures | 6 scripts, 18+ PNGs |
