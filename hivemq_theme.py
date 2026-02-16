@@ -136,6 +136,14 @@ class HiveMQPalette:
             )
         return Custom(label, node_info["path"])
 
+    def print_bom(self):
+        """Print the Bill of Materials table to the console."""
+        print("\n| Symbol | Label | Technical Notes |")
+        print("| :--- | :--- | :--- |")
+        for item in self.used_symbols:
+            print(f"| {item['symbol']} | {item['label']} | {item['notes']} |")
+        print()
+
     def generate_readme(self, diagram_name, image_file):
         with open("README.md", "w") as f:
             f.write(f"# {diagram_name.replace('_', ' ')}\n\n")

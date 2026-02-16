@@ -1,5 +1,5 @@
 # Use a slim Python image
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 # Install Graphviz system dependencies
 RUN apt-get update && apt-get install -y \
@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run your main script
-CMD ["python", "main.py"]
+CMD ["python", "demo.py"]
