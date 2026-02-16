@@ -21,9 +21,9 @@ fi
 echo "Running demo script..."
 python3 demo.py
 
-if [ -f "demo_architecture.png" ]; then
-    echo "Success! Diagram created at $(pwd)/demo_architecture.png"
+if [ -f "images/demo_architecture.png" ] || [ -f "images/demo_architecture_transparent.png" ]; then
+    echo "Success! Diagram created in $(pwd)/images/"
 else
-    echo "Error: Diagram file not found."
+    echo "Error: Diagram file not found in images/."
     exit 1
 fi

@@ -1,6 +1,6 @@
 # Reference Architectures
 
-Five HiveMQ reference architecture diagrams generated from recent [HiveMQ blog](https://www.hivemq.com/blog/) articles.
+Six HiveMQ reference architecture diagrams generated from recent [HiveMQ blog](https://www.hivemq.com/blog/) articles and architectural patterns.
 
 ## Diagrams
 
@@ -44,6 +44,13 @@ Hub-and-spoke UNS with HiveMQ as the central broker. ISA-95 domains (Control, Op
 ![Multi-Site Energy](./05_multi_site_energy.png)
 
 Multi-site renewable energy grid: Wind farm, Solar farm, and Hydro plant each with HiveMQ Edge → central cloud broker → grid analytics, demand forecasting, and regulatory compliance. Composite architecture applying patterns from all four source articles.
+
+---
+
+### 6. The Semantic Gap Architecture
+![Semantic Gap](./06_semantic_gap.png)
+
+Three-layer visualization showing the missing ontology/semantic layer between data collection (PLCs, sensors, Modbus devices → HiveMQ Edge) and AI model inference (ML models, analytics dashboards, digital twins). Data flows from Layer 1 through a dashed "MISSING" Layer 2 (context, relationships, meaning) and arrives at Layer 3 as raw numbers without semantics — "garbage in, garbage out."
 
 ## Background Options
 
