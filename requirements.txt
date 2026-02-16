@@ -1,4 +1,4 @@
-diagrams
-pyyaml
-gitpython
-boto3
+diagrams==0.25.1
+pyyaml==6.0.3
+gitpython==3.1.46
+boto3==1.42.44

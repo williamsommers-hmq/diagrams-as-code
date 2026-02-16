@@ -1,6 +1,9 @@
+from __future__ import annotations
+
 import csv
 import json
 import os
+from typing import Any
 
 import boto3
 import yaml
@@ -16,7 +19,7 @@ HIVEMQ_TEAL = "#037DA5"
 DARK_GREY = "#181818"
 
 # Default theme (dark background)
-GLOBAL_ATTR = {
+GLOBAL_ATTR: dict[str, str] = {
     "bgcolor": HIVEMQ_BLACK,
     "fontcolor": HIVEMQ_YELLOW,
     "fontsize": "24",
@@ -27,7 +30,7 @@ GLOBAL_ATTR = {
     "splines": "ortho",
 }
 
-BASE_NODE_ATTR = {
+BASE_NODE_ATTR: dict[str, str] = {
     "fontcolor": HIVEMQ_BLACK,
     "fillcolor": HIVEMQ_YELLOW,
     "style": "filled",
@@ -38,7 +41,9 @@ BASE_NODE_ATTR = {
 }
 
 
-def get_theme(background="black"):
+def get_theme(
+    background: str = "black",
+) -> tuple[dict[str, str], dict[str, str], str, str]:
     """Return (global_attr, base_node_attr, cluster_fontcolor, cluster_bg) for a background color.
 
     Args:
@@ -81,19 +86,19 @@ def get_theme(background="black"):
 
 
 class HiveMQPalette:
-    def __init__(self, config_path="icons.yaml"):
+    def __init__(self, config_path: str = "icons.yaml") -> None:
         self.config_path = config_path
-        self.icon_data = {}
-        self.used_symbols = []
+        self.icon_data: dict[str, dict[str, str]] = {}
+        self.used_symbols: list[dict[str, str]] = []
         self._bootstrap()
         self.load_icons()
 
-    def _bootstrap(self):
+    def _bootstrap(self) -> None:
         if not os.path.exists("icons"):
             os.makedirs("icons")
         if not os.path.exists(self.config_path):
             ext = os.path.splitext(self.config_path)[1].lower()
-            default = [
+            default: list[dict[str, str]] = [
                 {
                     "symbol": "edge",
                     "path": "./icons/edge.png",
@@ -110,7 +115,7 @@ class HiveMQPalette:
                     writer.writeheader()
                     writer.writerows(default)
 
-    def load_icons(self):
+    def load_icons(self) -> None:
         ext = os.path.splitext(self.config_path)[1].lower()
         with open(self.config_path, "r") as f:
             if ext == ".json":
@@ -125,18 +130,23 @@ class HiveMQPalette:
                     entry["path"] = os.path.abspath(entry["path"])
                 self.icon_data[entry["symbol"].lower()] = entry
 
-    def get_node(self, symbol, label):
+    def get_node(self, symbol: str, label: str) -> Custom:
         sym_key = symbol.lower()
         node_info = self.icon_data.get(
             sym_key, {"path": "./icons/default.png", "notes": "Unknown"}
         )
+        icon_path = node_info["path"]
+        if not os.path.exists(icon_path):
+            raise FileNotFoundError(
+                f"Icon not found for symbol '{sym_key}': {icon_path}"
+            )
         if sym_key not in [s["symbol"] for s in self.used_symbols]:
             self.used_symbols.append(
                 {"symbol": sym_key, "label": label, "notes": node_info.get("notes", "")}
             )
-        return Custom(label, node_info["path"])
+        return Custom(label, icon_path)
 
-    def print_bom(self):
+    def print_bom(self) -> None:
         """Print the Bill of Materials table to the console."""
         print("\n| Symbol | Label | Technical Notes |")
         print("| :--- | :--- | :--- |")
@@ -144,17 +154,28 @@ class HiveMQPalette:
             print(f"| {item['symbol']} | {item['label']} | {item['notes']} |")
         print()
 
-    def generate_readme(self, diagram_name, image_file):
-        with open("README.md", "w") as f:
+    def generate_readme(
+        self, diagram_name: str, image_file: str, output_path: str = "README.md"
+    ) -> None:
+        """Generate a README with diagram image and Bill of Materials.
+
+        Args:
+            diagram_name: Name of the diagram (underscores become spaces in heading).
+            image_file: Path to the generated diagram image.
+            output_path: Where to write the README (default: "README.md").
+        """
+        with open(output_path, "w") as f:
             f.write(f"# {diagram_name.replace('_', ' ')}\n\n")
             f.write(f"![Architecture Diagram](./{image_file})\n\n")
             f.write("## Bill of Materials\n\n")
             f.write("| Symbol | Label | Technical Notes |\n| :--- | :--- | :--- |\n")
             for item in self.used_symbols:
                 f.write(f"| {item['symbol']} | {item['label']} | {item['notes']} |\n")
-        print("Generated README.md locally.")
+        print(f"Generated {output_path} locally.")
 
-    def push_to_github(self, repo_path, commit_msg="Automated diagram update"):
+    def push_to_github(
+        self, repo_path: str, commit_msg: str = "Automated diagram update"
+    ) -> None:
         """Commits and pushes changes to the current Git repository."""
         try:
             repo = Repo(repo_path)
@@ -166,7 +187,9 @@ class HiveMQPalette:
         except Exception as e:
             print(f"Git Error: {e}")
 
-    def upload_to_s3(self, file_list, bucket_name, region="us-east-1"):
+    def upload_to_s3(
+        self, file_list: list[str], bucket_name: str, region: str = "us-east-1"
+    ) -> None:
         """Uploads the generated files to an S3 bucket for hosting."""
         s3 = boto3.client("s3", region_name=region)
         for file in file_list:

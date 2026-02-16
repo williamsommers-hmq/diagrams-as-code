@@ -1,30 +1,30 @@
-- symbol: 01
+- symbol: step_1
   path: "./icons/PNGs/01.png"
-  notes: "01"
-- symbol: 02
+  notes: "Step marker 1 (circled number)"
+- symbol: step_2
   path: "./icons/PNGs/02.png"
-  notes: "02"
-- symbol: 03
+  notes: "Step marker 2 (circled number)"
+- symbol: step_3
   path: "./icons/PNGs/03.png"
-  notes: "03"
-- symbol: 04
+  notes: "Step marker 3 (circled number)"
+- symbol: step_4
   path: "./icons/PNGs/04.png"
-  notes: "04"
-- symbol: 05
+  notes: "Step marker 4 (circled number)"
+- symbol: step_5
   path: "./icons/PNGs/05.png"
-  notes: "05"
-- symbol: 06
+  notes: "Step marker 5 (circled number)"
+- symbol: step_6
   path: "./icons/PNGs/06.png"
-  notes: "06"
-- symbol: 07
+  notes: "Step marker 6 (circled number)"
+- symbol: step_7
   path: "./icons/PNGs/07.png"
-  notes: "07"
-- symbol: 08
+  notes: "Step marker 7 (circled number)"
+- symbol: step_8
   path: "./icons/PNGs/08.png"
-  notes: "08"
-- symbol: 09
+  notes: "Step marker 8 (circled number)"
+- symbol: step_9
   path: "./icons/PNGs/09.png"
-  notes: "09"
+  notes: "Step marker 9 (circled number)"
 - symbol: badge
   path: "./icons/PNGs/Badge.png"
   notes: "Badge"
